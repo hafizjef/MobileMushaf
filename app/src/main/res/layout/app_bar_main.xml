@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+<android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.hafizjef.mobilemushaf.ui.main.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+    />
+
+    <com.dekoservidoni.omfm.OneMoreFabMenu
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:content_options="@menu/fab_content"
+            app:close_on_click="true"
+            app:color_main_button="@color/colorPrimaryDark"
+            app:color_secondary_buttons="@color/colorPrimary"
+            app:expanded_background_color="@color/omfm_expanded_background_sample"
+            app:rotate_main_button="true"
+            app:size_main_button="@integer/omfm_fab_size_normal"
+            app:size_secondary_buttons="@integer/omfm_fab_size_mini" />
+
+</android.support.design.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- First button is the initial Fab of the menu -->
+    <!-- Don't need the title in this case, so let it empty -->
+    <item
+            android:id="@+id/main_option"
+            android:icon="@drawable/ic_add_24dp"
+            android:title=""/>
+
+    <!-- Options buttons of the Fab menu -->
+    <item
+            android:id="@+id/capture_from_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:tint="@color/colorWhite"
+            android:title="@string/action_capture" />
+
+
+</menu>

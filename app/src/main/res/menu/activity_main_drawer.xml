@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:checked="true"
+                android:id="@+id/nav_verify"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/action_verify"/>
+        <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/action_report"/>
+    </group>
+
+    <item android:title="@string/title_configs">
+        <menu>
+            <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="@string/action_setting"/>
+        </menu>
+    </item>
+
+</menu>
